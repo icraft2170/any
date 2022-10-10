@@ -1,4 +1,4 @@
-package even_number_average;
+package basic;
 
 public class EvenNumberAverage {
 
