@@ -1,6 +1,6 @@
 package even_number_average;
 
-public class Main {
+public class EvenNumberAverage {
 
   public static void main(String[] args) {
     int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
