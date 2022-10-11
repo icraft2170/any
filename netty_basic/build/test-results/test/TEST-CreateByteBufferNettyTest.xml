@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CreateByteBufferNettyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-10-10T10:22:20" hostname="sonhyeonhos-MacBook-Air.local" time="0.136">
+  <properties/>
+  <testcase name="createPooledHeapBufferTest()" classname="CreateByteBufferNettyTest" time="0.122"/>
+  <testcase name="createUnpooledDirectBufferTest()" classname="CreateByteBufferNettyTest" time="0.004"/>
+  <testcase name="createUnpooledHeapBufferTest()" classname="CreateByteBufferNettyTest" time="0.003"/>
+  <testcase name="createPooledDirectBufferTest()" classname="CreateByteBufferNettyTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
