@@ -21,8 +21,7 @@ CREATE TABLE `pass`
     `expired_at`      timestamp            DEFAULT NULL COMMENT '만료 일시',
     `created_at`      timestamp   NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '생성 일시',
     `modified_at`     timestamp            DEFAULT NULL COMMENT '수정 일시',
-    PRIMARY KEY (`pass_seq`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='이용권';
+ㅉㅈ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='  ';
 
 CREATE TABLE `booking`
 (
