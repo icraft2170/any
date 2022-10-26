@@ -15,7 +15,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@EnableBatchProcessing
 @RequiredArgsConstructor
 public class PassBatchApplication {
 
