@@ -1,8 +1,10 @@
 package me.hero;
 
-public class Main {
+import java.io.IOException;
 
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
+//Get /calculator?operand1=
+public class Main {
+  public static void main(String[] args) throws IOException {
+    new CustomWebApplicationServer(8080).start();
   }
 }
