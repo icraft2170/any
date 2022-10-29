@@ -19,7 +19,7 @@ class UserDaoTest {
   void setUp() {
     ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
     populator.addScript(new ClassPathResource("db_schema.sql"));
-    DatabasePopulatorUtils.execute(populator, ConnectionManager.getDatasource());
+    DatabasePopulatorUtils.execute(populator, ConnectionManager.getDataSource());
   }
 
   @Test
