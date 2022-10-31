@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 
 @WebServlet("/") // 어떤 경로로 오더라도 DispatcherServlet이 실행되도록 한다.
 public class DispatcherServlet extends HttpServlet {
+
   private static final Logger log = LoggerFactory.getLogger(DispatcherServlet.class);
 
   private RequestMappingHandlerMapping rmhm;
@@ -26,7 +27,7 @@ public class DispatcherServlet extends HttpServlet {
   @Override
   protected void service(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-      log.info("[DispatcherServlet] service started. ");
+    log.info("[DispatcherServlet] service started. ");
     try {
       Controller handler = rmhm.findHandler(req.getRequestURI());
       String viewName = handler.handleRequest(req, resp);
