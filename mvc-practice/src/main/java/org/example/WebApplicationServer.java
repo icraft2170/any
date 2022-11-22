@@ -1,16 +1,17 @@
 package org.example;
 
 
-import java.io.File;
-import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+
+
 public class WebApplicationServer {
   private static final Logger log = LoggerFactory.getLogger(WebApplicationServer.class);
 
-  public static void main(String[] args) throws LifecycleException {
+  public static void main(String[] args) throws Exception {
     String webappDirLocation = "webapps/";
     Tomcat tomcat = new Tomcat();
     tomcat.setPort(8080);
