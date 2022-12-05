@@ -3,21 +3,23 @@ package game.book.chapter02;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 public class PasswordStrengthMeterTest {
   private PasswordStrengthMeter meter = new PasswordStrengthMeter();
 
-  @Test
-  void 비밀번호_강도가_강함일_때() {
-    assertStrength("ab12!@AB", PasswordStrength.STRONG);
-    assertStrength("abc1!Add", PasswordStrength.STRONG);
+  @ParameterizedTest
+  @ValueSource(strings = {"ab12!@AB", "abc1!Add"})
+  void 비밀번호_강도가_강함일_때(String password) {
+    assertStrength(password, PasswordStrength.STRONG);
   }
 
 
-  @Test
-  void 길이외에_모든조건_충족해_노말일_때() {
-    assertStrength("ab12!@A", PasswordStrength.NORMAL);
-    assertStrength("Ab12!c", PasswordStrength.NORMAL);
+  @ParameterizedTest
+  @ValueSource(strings = {"ab12!@A", "Ab12!c"})
+  void 길이외에_모든조건_충족해_노말일_때(String password) {
+    assertStrength(password, PasswordStrength.NORMAL);
   }
 
   @Test
